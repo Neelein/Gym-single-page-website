@@ -27,6 +27,7 @@
   background-color: black;
   color: #fff;
 }
+
 .navbar .logo {
   display: flex;
   align-items: center;
@@ -39,6 +40,7 @@
   object-fit: cover;
   margin-right: 1rem;
 }
+
 .navbar .logo h2 {
   font-size: 2rem;
   font-weight: 500;
@@ -49,9 +51,11 @@
   align-items: center;
   list-style: none;
 }
+
 .navbar .menu .menu-item:not(first-child) {
   margin-left: 2.5rem;
 }
+
 .navbar .menu .menu-item a {
   text-decoration: none;
   color: #fff;
@@ -69,6 +73,7 @@
   .navbar {
     position: fixed;
   }
+
   .navbar .menu {
     position: absolute;
     z-index: 1000;
@@ -83,19 +88,24 @@
     transform: translateX(100%);
     transition: transform 0.5s ease;
   }
+
   .navbar .menu.active {
     transform: translateX(0%);
   }
+
   .navbar .menu .menu-item:not(last-child) {
     margin-bottom: 5rem;
   }
+
   .navbar .menu .menu-item {
     width: 100%;
     text-align: center;
   }
+
   .navbar .menu .menu-item a {
     font-size: 1.5rem;
   }
+
   .toggle-menu {
     position: absolute;
     top: 30%;
@@ -104,6 +114,7 @@
     cursor: pointer;
     z-index: 1001;
   }
+
   .toggle-menu .bar {
     display: block;
     width: 25px;
@@ -112,12 +123,15 @@
     margin: 5px auto;
     transition: transform 0.3s ease;
   }
+
   .toggle-menu.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
   .toggle-menu.active .bar:nth-child(2) {
     opacity: 0;
   }
+
   .toggle-menu.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
@@ -138,9 +152,11 @@
   flex-direction: column;
   justify-content: flex-end;
 }
+
 .home > *:not(last-child) {
   margin-bottom: 2rem;
 }
+
 .home .title h1 {
   font-size: 5rem;
   color: #fff;
@@ -154,6 +170,7 @@
   font-weight: 300;
   letter-spacing: 0.5rem;
 }
+
 .home .btn {
   position: relative;
   width: 200px;
@@ -185,6 +202,7 @@
   z-index: -1;
   transition: width 0.5s ease;
 }
+
 .home .btn:hover::before {
   width: 100%;
 }
@@ -193,6 +211,7 @@
   .home .title h1 {
     font-size: 4rem;
   }
+
   .home .desc p {
     font-size: 1rem;
   }
@@ -212,6 +231,7 @@
   margin-bottom: 2rem;
   color: #930000;
 }
+
 .serve .title h2 {
   font-size: 2.5rem;
   font-weight: 400;
@@ -227,6 +247,7 @@
 .serve .serve-container > * :not(last-child) {
   margin-bottom: 1rem;
 }
+
 .serve .serve-container .serve-item {
   font-size: 1.5rem;
   white-space: nowrap;
@@ -255,6 +276,7 @@
   grid-template-rows: repeat(auto 350px);
   gap: 1rem;
 }
+
 .team .content .topline {
   color: #930000;
   font-size: 1.5rem;
@@ -262,18 +284,22 @@
   letter-spacing: 1rem;
   margin-bottom: 0.5rem;
 }
+
 .team .content h1 {
   font-size: 2rem;
   letter-spacing: 1rem;
   margin-bottom: 0.5rem;
 }
+
 .team .content p {
   letter-spacing: 0.5rem;
   font-weight: 500;
 }
+
 .team-card {
   position: relative;
 }
+
 .team-card p {
   position: absolute;
   color: #fff;
@@ -281,61 +307,75 @@
   bottom: 5%;
   left: 5%;
 }
+
 .team .team-card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
+
 .team .content::nth-child(1) {
   grid-row: 5/6;
   grid-column: 1/2;
 }
+
 .team .content:nth-child(2) {
   grid-row: 1/2;
   grid-column: 2/3;
 }
+
 .team .team-card:nth-child(3) {
   grid-row: 1/3;
   grid-column: 1/2;
 }
+
 .team .team-card:nth-child(4) {
   grid-row: 3/5;
   grid-column: 1/2;
 }
+
 .team .team-card:nth-child(5) {
   grid-row: 2/4;
   grid-column: 2/3;
 }
+
 .team .team-card:nth-child(6) {
   grid-row: 4/6;
   grid-column: 2/3;
 }
+
 @media screen and (max-width: 45em) {
   .team {
     display: grid;
     grid-template-columns: 1fr;
   }
+
   .team .content:nth-child(1) {
     grid-row: 1/2;
     grid-column: 1/2;
   }
+
   .team .content:nth-child(2) {
     grid-row: 2/3;
     grid-column: 1/2;
   }
+
   .team .team-card:nth-child(3) {
     grid-row: 3/4;
     grid-column: 1/2;
   }
+
   .team .team-card:nth-child(4) {
     grid-row: 4/5;
     grid-column: 1/2;
   }
+
   .team .team-card:nth-child(5) {
     grid-row: 5/6;
     grid-column: 1/2;
   }
+
   .team .team-card:nth-child(6) {
     grid-row: 6/7;
     grid-column: 1/2;
@@ -361,18 +401,22 @@
   align-items: center;
   justify-content: center;
 }
+
 .signUp .signUp-wrapper {
   width: 100%;
 }
+
 .signUp .signUp-wrapper > *:not(last-child) {
   margin-bottom: 2rem;
 }
+
 .signUp .signUp-wrapper .title {
   color: #fff;
   font-size: 3rem;
   letter-spacing: 1rem;
   font-weight: 500;
 }
+
 .signUp .signUp-wrapper p {
   font-size: 1.2rem;
   color: #fff;
@@ -388,6 +432,7 @@
   align-items: center;
   width: 700px;
 }
+
 .email input {
   width: 100%;
   padding: 0.5rem 3rem;
@@ -397,6 +442,7 @@
   outline: none;
   font-size: 1.5rem;
 }
+
 .email .btn {
   border: none;
   position: absolute;
@@ -411,6 +457,7 @@
   z-index: 1;
   cursor: pointer;
 }
+
 .email .btn::before {
   content: "";
   position: absolute;
@@ -428,20 +475,25 @@
 .email .btn:hover::before {
   width: 100%;
 }
+
 @media screen and (max-width: 45em) {
   .signUp .signUp-wrapper .title {
     font-size: 2rem;
   }
+
   .signUp .signUp-wrapper p {
     font-size: 1rem;
   }
+
   .email {
     width: 100%;
   }
+
   .email input {
     width: 100%;
     padding: 0.5rem 3rem;
   }
+
   .email .btn {
     font-size: 1.5rem;
     padding: 0.5rem 2rem;
@@ -461,34 +513,41 @@
   align-items: center;
   color: #fff;
 }
+
 .footer-container .header {
   margin-bottom: 2rem;
   font-size: 2.5rem;
 }
+
 .footer-container .footer-info {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   place-items: center;
 }
+
 .footer-container .footer-info .footer-desc {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .footer-container .footer-info .footer-desc > * {
   margin-bottom: 1rem;
   font-size: 1.2rem;
 }
+
 .footer-container .footer-info .footer-link {
   display: flex;
   flex-direction: column;
 }
+
 .footer-container .footer-info .footer-link .title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+
 .footer-container .footer-info .footer-link a {
   text-decoration: none;
   color: #fff;
@@ -496,19 +555,24 @@
   font-size: 1.2rem;
   transition: color 0.3s ease;
 }
+
 .footer-container .footer-info .footer-link a:hover {
   color: rgb(158, 55, 55);
 }
+
 @media screen and (max-width: 45em) {
   .footer-container .footer-info {
     grid-template-columns: 1fr;
   }
+
   .footer-container .footer-info > *:not(last-child) {
     margin-bottom: 1rem;
   }
+
   .footer-container .footer-info .footer-desc {
     align-items: center;
   }
+
   .footer-container .footer-info .footer-link {
     align-items: flex-start;
   }

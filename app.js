@@ -6,6 +6,7 @@ toggleMenu.addEventListener('click',()=>{
     toggleMenu.classList.toggle('active')
     menu.classList.toggle('active')
 })
+
 menuLink.forEach(link=>{
     link.addEventListener('click',()=>{
         menu.classList.remove('active')
@@ -50,6 +51,7 @@ gsap.from('.animate-team',{
     stagger:0.4,
     delay:0.3
 })
+
 gsap.from('.animate-team-card',{
     scrollTrigger:'.animate-team-card',
     duration:0.6,
